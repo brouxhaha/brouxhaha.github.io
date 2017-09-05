@@ -380,10 +380,16 @@ PROJECTS
 .project {
     display: grid;
     max-width: 1200px;
-    width: 75%;
+    width: 90%;
     margin: 0 auto 5rem;
     transition: all 0.45s ease-out;
     padding: 1rem;
+}
+
+@media (min-width: 600px){
+    .project {
+        width: 75%;
+    }
 }
 
 .project:last-child {
