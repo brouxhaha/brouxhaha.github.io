@@ -428,6 +428,7 @@ PROJECTS
     @media (min-width: 650px){
         .project__text {
             width: 70%;
+            margin: 0 auto;
         }
 
         .project:hover .project__text, .project:active .project__text {
@@ -463,6 +464,7 @@ PROJECTS
             grid-column: 1/4;
             grid-row: 4/6;
             width: auto;
+            margin: auto;
         }
 
         .project__image {
