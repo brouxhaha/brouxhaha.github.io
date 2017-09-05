@@ -396,31 +396,6 @@ PROJECTS
     margin-bottom: 0;
 }
 
-.project:hover, .project:active {
-    transform: scale(1.2);
-    background: var(--main-color);
-}
-
-.project:hover .project__text, .project:active .project__text {
-    transform: translateY(10%) translateX(5%);
-    box-shadow: 0 3px 6px 0 rgba(40, 40, 40, 0.35);
-}
-
-.project:hover .project__image, .project:active .project__image {
-    transform: translateY(-8%) translateX(-5%);
-}
-
-.project:hover .project__img, .project:active .project__img {
-    box-shadow: 0 3px 9px 0 rgba(40, 40, 40, 0.6);
-}
-
-.project:hover .project__action, .project:active .project__action {
-    opacity: 1;
-    height: auto;
-    width: 100%;
-    visibility: visible;
-}
-
     .project__text {
         grid-row: 19/26;
         grid-column: 1/11;
@@ -437,8 +412,41 @@ PROJECTS
             margin: 0 auto;
         }
 
+        .project:hover, .project:active {
+            transform: scale(1.2);
+            background: var(--main-color);
+        }
+
         .project:hover .project__text, .project:active .project__text {
             transform: translateY(10%) translateX(35%);
+            box-shadow: 0 3px 6px 0 rgba(40, 40, 40, 0.35);
+        }
+
+        .project:hover .project__image, .project:active .project__image {
+            transform: translateY(-8%) translateX(-5%);
+        }
+
+        .project:hover .project__img, .project:active .project__img {
+            box-shadow: 0 3px 9px 0 rgba(40, 40, 40, 0.6);
+        }
+
+        .project:hover .project__action, .project:active .project__action {
+            opacity: 1;
+            height: auto;
+            width: 100%;
+            visibility: visible;
+        }
+
+        .project__action {
+            opacity: 0;
+            min-height: 0;
+            visibility: hidden;
+            transition: all 0.4s ease-in-out;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            text-align: right;
+            margin-bottom: 0;
         }
     }
 
@@ -454,9 +462,6 @@ PROJECTS
     }
 
     .project__action {
-        opacity: 0;
-        min-height: 0;
-        visibility: hidden;
         transition: all 0.4s ease-in-out;
         position: absolute;
         right: 0;
