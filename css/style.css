@@ -425,6 +425,16 @@ PROJECTS
         position: relative;
     }
 
+    @media (min-width: 650px){
+        .project__text {
+            width: 70%;
+        }
+
+        .project:hover .project__text, .project:active .project__text {
+            transform: translateY(10%) translateX(35%);
+        }
+    }
+
     .project__image {
         grid-row: 1/20;
         grid-column: 1/2;
@@ -452,6 +462,7 @@ PROJECTS
         .project__text {
             grid-column: 1/4;
             grid-row: 4/6;
+            width: auto;
         }
 
         .project__image {
@@ -460,11 +471,11 @@ PROJECTS
         }
 
         .project:hover .project__text, .project:active .project__text {
-            transform: translateX(-15%);
+            transform: translateX(-12%);
         }
 
         .project:hover .project__image, .project:active .project__image {
-            transform: translateX(15%);
+            transform: translateX(12%);
         }
     }
 
