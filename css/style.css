@@ -417,7 +417,7 @@ PROJECTS
 
     .project__text {
         grid-row: 19/26;
-        grid-column: 1/2;
+        grid-column: 1/11;
         background: rgba(240, 242, 238, 0.85);
         padding: 1rem;
         transition: all 0.45s ease-out;
@@ -427,7 +427,7 @@ PROJECTS
 
     @media (min-width: 650px){
         .project__text {
-            width: 70%;
+            grid-column: 3/9;
             margin: 0 auto;
         }
 
@@ -438,7 +438,7 @@ PROJECTS
 
     .project__image {
         grid-row: 1/20;
-        grid-column: 1/2;
+        grid-column: 1/11;
         transition: all 0.45s ease-out;
     }
 
@@ -464,7 +464,6 @@ PROJECTS
             grid-column: 1/4;
             grid-row: 4/6;
             width: auto;
-            margin: auto;
         }
 
         .project__image {
