@@ -232,6 +232,8 @@ html {
     --main-bg-color: #23201c;
     --main-color: #c2531a;
     --alt-color: #931616;
+
+    font-family: "acumin-pro";
     color: var(--black);
     background: var(--main-bg-color);
     line-height: 1.4;
