@@ -229,9 +229,10 @@ label,input,textarea,button,select,option{
 
 html {
     --black: #282828;
-    --main-bg-color: #23201c;
+    --main-bg-color: #C79FD3;
     --main-color: #c2531a;
-    --alt-color: #931616;
+    --alt-color: var(--main-bg-color);
+    --secondary-color: #931616;
 
     font-family: 'acumin-pro';
     color: var(--black);
@@ -432,10 +433,6 @@ PROJECTS
             margin: 0 auto;
         }
 
-        .project:hover, .project:active {
-            background: var(--main-color);
-        }
-
         .project__action {
             position: absolute;
             right: 0;
@@ -468,10 +465,15 @@ PROJECTS
     }
 
 .button {
-    background: var(--alt-color);
+    background: var(--main-color);
     padding: 5px 9px;
     color: white;
     font-size: 0.75rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    background: var(--secondary-color);
 }
 
 .button:after {
