@@ -468,6 +468,7 @@ PROJECTS
     padding: 5px 9px;
     color: white;
     font-size: 0.75rem;
+    display: inline-block;
     transition: all 0.2s ease-in-out;
 }
 
