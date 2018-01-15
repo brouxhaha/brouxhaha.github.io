@@ -445,6 +445,7 @@ PROJECTS
     @media (min-width: 820px){
         .project {
             display: block;
+            position: relative;
         }
 
         .project__text {
