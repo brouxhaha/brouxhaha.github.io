@@ -242,7 +242,7 @@ html {
 
 a {
     text-decoration: none;
-    color: var(--black);
+    color: white;
     position: relative;
     -webkit-transition: all .25s ease-in;
     transition: all .25s ease-in;
@@ -314,7 +314,7 @@ h3 {
 
 .page-header {
     background: linear-gradient(to bottom, var(--alt-color) 0%,var(--main-color) 100%);
-    color: white;
+    color: var(--black);
     margin-bottom: 5rem;
 }
 
