@@ -379,7 +379,7 @@ PROJECTS
 }
 
 .project-header {
-    color: var(--main-color);
+    color: var(--black);
     text-align: center;
 }
 
