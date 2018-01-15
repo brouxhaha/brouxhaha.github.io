@@ -443,15 +443,23 @@ PROJECTS
     }
 
     @media (min-width: 820px){
+        .project {
+            display: block;
+        }
+
         .project__text {
-            grid-column: 1/4;
-            grid-row: 4/6;
-            width: auto;
+            position: absolute;
+            width: 35%;
+            bottom: 20%;
         }
 
         .project__image {
-            grid-column: 3/12;
-            grid-row: 1/7;
+            width: 80%;
+            margin-left: auto;
+        }
+
+        .project__img {
+            margin-left: auto;
         }
 
         .project:hover .project__text, .project:active .project__text {
