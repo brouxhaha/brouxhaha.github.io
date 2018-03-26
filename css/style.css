@@ -304,16 +304,15 @@ textarea:focus {
 
 html {
     --black: #282828;
-    --main-bg-color: #EBD2FF;
     /*old:#C79FD3*/
     //--main-color: #c2531a;
     --main-color: #FF9600;
-    --alt-color: var(--main-bg-color);
+    --alt-color: #F1E0FF;
     --secondary-color: #151E30;
     /*rgb: 21, 30, 48*/
     font-family: 'acumin-pro';
     color: var(--black);
-    background: var(--main-bg-color);
+    background: var(--secondary-color);
     line-height: 1.4;
 }
 
