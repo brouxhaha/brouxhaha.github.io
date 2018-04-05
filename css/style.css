@@ -469,7 +469,7 @@ PROJECTS
 }
 
 .project-header {
-    color: var(--secondary-color);
+    color: var(--alt-color);
     text-align: center;
 }
 
