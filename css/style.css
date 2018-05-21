@@ -406,7 +406,6 @@ h3 {
     justify-items: center;
     align-content: center;
     min-height: 300px;
-    padding: 1rem 2rem 2rem;
 }
 
 .page-header {
@@ -578,4 +577,8 @@ PROJECTS
 
 .centered {
     text-align: center;
+}
+
+.no-wrap {
+    white-space: nowrap;
 }
