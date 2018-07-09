@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,44 +8,180 @@
     <meta property="og:title" content="Andy DeBroux | Web Development && Design" />
     <meta name="description" content="I'm a Seattle-based front-end developer and web designer with over six years experience.">
     <title>Andy DeBroux | Web Development && Design</title>
-    <!--<link href="css/style.css" rel="stylesheet">-->
+    <link href="css/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="/favicon.png">
+    <script src="https://use.typekit.net/eju0zct.js"></script>
     <script>
-        (function(d) {
-            var config = {
-                    kitId: 'vqp2oei',
-                    scriptTimeout: 3000,
-                    async: true
-                },
-                h = d.documentElement,
-                t = setTimeout(function() {
-                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-                }, config.scriptTimeout),
-                tk = d.createElement("script"),
-                f = false,
-                s = d.getElementsByTagName("script")[0],
-                a;
-            h.className += " wf-loading";
-            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-            tk.async = true;
-            tk.onload = tk.onreadystatechange = function() {
-                a = this.readyState;
-                if (f || a && a != "complete" && a != "loaded") return;
-                f = true;
-                clearTimeout(t);
-                try {
-                    Typekit.load(config)
-                } catch (e) {}
-            };
-            s.parentNode.insertBefore(tk, s)
-        })(document);
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
     </script>
 </head>
 
 <body>
-    <div id="app">
-    </div>
-    <script src="/dist/build.js"></script>
+    <header class="page-header">
+        <svg class="page-header__background"></svg>
+        <div class="wrapper grid page-header__text">
+            <div class="logo">
+                <svg id="logo__svg" data-name="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44"><defs><style>.cls-1{fill:#282828;}.cls-2{fill:#FF9600;}</style></defs><title>logo</title><path class="cls-1" d="M31.05,3.88V5.71A20.62,20.62,0,0,1,42.62,24.25V22.42A20.62,20.62,0,0,0,31.05,3.88Z"></path><path class="cls-1" d="M12.94,23.39a8.26,8.26,0,0,0,0,.86,9.05,9.05,0,0,0,18.1,0V22.42a9.08,9.08,0,0,1-18.11,1Z"></path><path class="cls-1" d="M22,3.62A20.45,20.45,0,0,1,26,4V2.19A20.6,20.6,0,0,0,1.38,22.42c0,.3,0,.61,0,.91A20.63,20.63,0,0,1,22,3.62Z"></path><path class="cls-2" d="M31.05,4.88v16.7h0v1.83a9.05,9.05,0,1,1-18.1,0V21.58A9.05,9.05,0,0,1,26,13.48V3.19A20.6,20.6,0,0,0,1.41,22.34a20.6,20.6,0,0,0,34,15v4.92h7.26V23.41A20.62,20.62,0,0,0,31.05,4.88Z"></path></svg>
+            </div>
+            <div class="grid">
+                <div class="info">
+                    <h1>Andy DeBroux</h1>
+                    <h2>Web Design <small>&amp;&amp;</small> <span class="no-wrap">Front-end Dev</span></h2>
+                </div>
+                <div class="intro">
+                    <p>I'm a Seattle-based web designer and front-end developer with over six years experience. I currently work for a small, 3-person company as the sole designer and front-end developer. I aim to create accessible, performant, and user-friendly
+                        websites. In the selected work below, I have done all the front-end work including design and development with HTML, CSS, and JavaScript from scratch to finish.</p>
+                    <p class="centered">You can find/contact me online:<br>
+                        <a href="https://twitter.com/brouxhaha">Twitter</a> | <a href="https://github.com/brouxhaha">Github</a> | <a href="https://codepen.io/brouxhaha/">Codepen</a> | <a href="mailto:andy.debroux@gmail.com">Email</a></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="wrapper">
+            <h2 class="project-header">Selected Work</h2>
+        </div>
+        <div class="wrapper">
+            <div class="project">
+                <div class="project__image">
+                    <img src="images/travel-alaska.jpg" class="project__img" alt="screenshot of travelalaska.com">
+                </div>
+                <div class="project__text">
+                    <h3>State of Alaska</h3>
+                    <p><small>The official travel site of the State of Alaska.</small></p>
+                    <p><small><em>Design | Front-end Development: HTML, CSS, JS</em></small></p>
+                    <p class="project__action"><a class="button" href="https://www.travelalaska.com">View the live Site</a></p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project__image">
+                    <img src="images/anchorage-library.jpg" class="project__img" alt="screenshot of anchoragelibrary.org">
+                </div>
+                <div class="project__text">
+                    <h3>Anchorage Public Library</h3>
+                    <p><small><em>Design | Front-end Development: HTML, CSS, JS | CMS Templating</em></small></p>
+                    <p class="project__action"><a class="button" href="http://www.anchoragelibrary.org">View the live Site</a></p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project__image">
+                    <img src="images/anchorage-museum.jpg" class="project__img" alt="screenshot of anchoragemuseum.org">
+                </div>
+                <div class="project__text">
+                    <h3>Anchorage Museum</h3>
+                    <p><small>The Anchorage Museum focuses on art in the circumpolar north.</small></p>
+                    <p><small><em>Design | Front-end Development: HTML, CSS, JS | CMS Templating</em></small></p>
+                    <p class="project__action"><a class="button" href="https://www.anchoragemuseum.org">View the live Site</a></p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project__image">
+                    <img src="images/north-to-alaska.jpg" class="project__img" alt="screenshot of northtoalaska.com">
+                </div>
+                <div class="project__text">
+                    <h3>North to Alaska</h3>
+                    <p><small>A joint project between Alaska, British Columbia, Alberta, and The Yukon in an effort to get people to drive North to Alaska.</small></p>
+                    <p><small><em>Design | Front-end Development: HTML, CSS, JS</em></small></p>
+                    <p class="project__action"><a class="button" href="http://www.northtoalaska.com">View the live Site</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+
+    </footer>
+
+    <script>
+        (function() {
+            const pHeader = document.querySelector('.page-header');
+            const svg = document.querySelector('.page-header__background');
+            let svgInner;
+            let phWidth = pHeader.offsetWidth;
+            let phHeight = pHeader.offsetHeight;
+            let resizeTimeout;
+
+            //window.addEventListener('resize', checkHeaderSize);
+
+            setCircles();
+
+            function setCircles() {
+                let numCircles = Math.ceil(phWidth / 100 * phHeight / 100);
+                let circles = [];
+                let css = [];
+                let circleData;
+
+                for (var i = 0; i < numCircles; i++) {
+                    circleData = randomizeCircle(i);
+                    circles.push(circleData[0]);
+                    css.push(
+                        `
+.circle${i} {
+	animation-name: hover${i};
+	animation-duration: ${(circleData[1] * circleData[1] * 300) + 2000}ms;
+	animation-iteration-count: infinite;
+}
+@keyframes hover${i} {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(${circleData[2] * 4}px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}`
+                    );
+                }
+
+                var style = document.createElement('style');
+                document.querySelector('body').appendChild(style);
+                style.innerHTML = css.join('');
+                svg.innerHTML = circles.join('');
+            }
+
+            function randomizeCircle(i) {
+                const cx = getRandomNum(10, phWidth - 10);
+                const cy = getRandomNum(10, phHeight - 10);
+                const r = getRandomNum(2, 20);
+                const opacity = getRandomNum(1, 15) / 100;
+                const floatDist = getRandomNum(r, r * 2);
+
+                return [`<circle cx="${cx}" cy="${cy}" r="${r}" class="background__circle circle${i}" style="fill-opacity: ${opacity}; stroke-opacity: ${opacity};" mydata:transform="${floatDist}" />`, r, floatDist];
+            }
+
+            function getRandomNum(min, max) {
+                return (Math.random() * (max - min + 1)) + min;
+            }
+
+
+            function checkHeaderSize() {
+                phWidth = pHeader.offsetWidth;
+                phHeight = pHeader.offsetHeight;
+            }
+
+            /*window.addEventListener("resize", resizeThrottler, false);
+
+            function resizeThrottler() {
+            	// ignore resize events as long as an actualResizeHandler execution is in the queue
+            	if (!resizeTimeout) {
+            		resizeTimeout = setTimeout(function() {
+            			resizeTimeout = null;
+            			checkHeaderSize();
+            		}, // The actualResizeHandler will execute at a rate of 15fps
+            		66);
+            	}
+            }*/
+        })();
+    </script>
 </body>
 
 </html>
